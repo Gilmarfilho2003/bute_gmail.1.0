@@ -41,10 +41,10 @@ class GmailBruteForce():
 
 print('''
 	==================================
-	|      [Gmail] ==> 3             |
+	|      brute force gmail         |
 	|--------------------------------|
-	|  versão de teste
-	| CoDeD By TA Hacker (@)          
+	|  versão está em teste          |
+	| Por Gilmar Filho               | 
 	|--------------------------------|
 	''')
 
