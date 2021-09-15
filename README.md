@@ -37,4 +37,7 @@ ls
 
 cd bute_gmail.1.0
  
+
+python3 gmail.py
+ 
  
