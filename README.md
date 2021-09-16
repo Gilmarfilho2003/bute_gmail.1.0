@@ -17,13 +17,13 @@ senha
 apt update 
 
 
-apt upgrede 
+apt upgrade -y
 
 
-apt install python2 -y 
+apt install python2 
 
 
-apt instal python3 -y 
+apt install python3  
 
 
 apt install git 
